@@ -1,0 +1,87 @@
+/* リセットCSS */
+
+.mainVisual{
+    background: #F2EFE4;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-block{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin:  60px auto;
+}
+@media screen and (max-width:640px) {
+    /* windows幅が640px以下の場合に↓のcssが適応される */
+    .card-block{
+        width: 100%;
+    }
+}
+/* レスポンシブWEBデザイン
+PCとSPの対応するもの */
+
+/* ↓↓↓PCの時 */
+.card-item{
+    width: 318px;
+    border: solid 1px #f00;
+}
+
+/* ↓↓↓ipadタブレットの時 */
+/* タブレットは今はいらない */
+
+/* ↓↓↓SPの時  スマートフォン = SP */
+@media screen and (max-width:640px) {
+    /* windows幅が640px以下の場合に↓のcssが適応される */
+    .card-item{
+        width: 90%;
+        border: solid 1px #ccc;
+        background: #0F0;
+    }
+}
+
+
+.btn{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 70px;
+    background: #8874FF;
+    color: #fff;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    width: 220px;
+}
+@media screen and (max-width:640px) {
+    .sp{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+}
+
+
+
+.position{
+    background: #E4F1F2;
+    width: 1000px;
+    height: 734px;
+    margin: 70px auto;
+    position: relative;
+}
+.furi-za{
+    position: absolute;
+    bottom: 150px;
+    right: 200px;
+    z-index: 530000;
+}
+.hito{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    z-index: 10;
+}
